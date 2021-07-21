@@ -1,0 +1,19 @@
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: lighten(#888, 35);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: lighten(#888, 10);
+  border-radius: 20px;
+  border: 2px solid lighten(#888, 35);
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: lighten(#888, 10) lighten(#888, 35);
+}

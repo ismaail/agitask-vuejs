@@ -1,0 +1,9 @@
+body {
+  background:
+    linear-gradient(rgba(#2db9d2, 0.7) 0%, rgba(#287fba, 0.7) 20%, rgba(#287fba, 0.7) 75%, rgba(#2db9d2, 0.7) 100%),
+    url("../images/bg.jpg") center center no-repeat
+  ;
+
+  //background: #2db9d2 url("../images/bg.jpg") center center no-repeat;
+  background-size: cover;
+}

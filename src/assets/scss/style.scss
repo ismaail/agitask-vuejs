@@ -1,0 +1,19 @@
+//@import "compass";
+
+@import "modules/pre_variables";
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+@import "modules/colors";
+@import "modules/post_variables";
+
+@import "bootstrap/scss/bootstrap";
+
+//@import "modules/fonts";
+//@import "modules/fontello";
+//@import "modules/scrollbar";
+
+@import "pages/common";
+@import "pages/header";
+//@import "pages/board";

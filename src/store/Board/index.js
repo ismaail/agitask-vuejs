@@ -8,19 +8,35 @@ export default {
         lists: [
             {
                 id: 1,
-                title: 'lorem 1',
+                title: 'Lorem Ipsum',
+                tasks: [
+                    "Lorem ipsum dolor sit",
+                    "Aliquam consequatur nisi reprehenderit",
+                    "Adipisci amet aperiam odit",
+                    "Amet assumenda quam veniam",
+                    "Accusamus adipisci commodi dicta",
+                ],
             },
             {
                 id: 2,
-                title: 'lorem 2',
+                title: 'Labore Quia',
+                tasks: [
+                    "Lorem ipsum dolor sit",
+                    "Rerum sit suscipit veritatis",
+                    "Aut ea nisi veritatis",
+                    "Eius natus qui vel",
+                    "Laudantium nihil nostrum quaerat",
+                ],
             },
             {
                 id: 3,
-                title: 'lorem 3',
-            },
-            {
-                id: 4,
-                title: 'lorem 4',
+                title: 'Consectetur Libero',
+                tasks: [
+                    "Et nulla reiciendis suscipit",
+                    "Aperiam deserunt fugiat perspiciatis",
+                    "Amet iusto quisquam veritatis",
+                    "Est quam quidem repellendus",
+                ],
             },
         ]
     },
