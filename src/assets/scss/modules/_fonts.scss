@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "GOTHIC";
+  src: url("../fonts/CenturyGothic.woff") format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "GOTHIC";
+  src: url("../fonts/CenturyGothic-Bold.woff") format('woff');
+  font-weight: bold;
+}
+
+body {
+  font-family: "GOTHIC", "arial";
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
