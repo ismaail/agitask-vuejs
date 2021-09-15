@@ -13,9 +13,12 @@ module.exports = {
     devServer: {
         clientLogLevel: 'warning',
         hot: true,
-        host: 'agitask.localhost',
+        host: 'www.agitasks.localhost',
         port: 8080,
-        https: true,
+        https: {
+            key: './server.key',
+            cert: './server.crt',
+          },
         contentBase: 'dist',
         compress: true,
         open: false,
