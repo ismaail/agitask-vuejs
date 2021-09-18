@@ -1,19 +1,12 @@
-$colors: (
+$custom-colors: (
   text: #333,
   primary: #67aaef,
   secondary: darken(#e9ecf4, 4),
   success: darken(#bdf13e, 12),
+  dark: darken(#5d6470, 10),
   gray-dark: darken(#5d6470, 10),
 );
 
-$theme-colors: map-merge($theme-colors, (
-  primary: map-get($colors, primary),
-  secondary: map-get($colors, secondary),
-  //info: map-get($colors, info),
-  //default: map-get($colors, default),
-  success: map-get($colors, success),
-  //danger: map-get($colors, danger),
-  text: map-get($colors, text),
-  dark: map-get($colors, gray-dark),
-  gray-dark: map-get($colors, gray-dark),
-));
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$utilities-bg-colors: map-merge($utilities-bg-colors, $custom-colors);
+$utilities-text-colors: map-merge($utilities-text-colors, $custom-colors);
