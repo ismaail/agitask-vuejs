@@ -1,4 +1,4 @@
-# agitask-vue
+# AgiTask - Vuejs
 
 ## Project setup
 ```
@@ -9,6 +9,8 @@ yarn install
 ```
 yarn serve
 ```
+
+Open in the browser https://localhost:8080
 
 ### Compiles and minifies for production
 ```
