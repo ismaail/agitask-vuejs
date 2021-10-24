@@ -31,13 +31,13 @@
 import { mapGetters } from 'vuex';
 
 export default {
-    name: 'Board',
+	name: 'Board',
 
-    computed: {
-        ...mapGetters({
-            lists: 'board/all'
-        }),
-    },
+	computed: {
+		...mapGetters({
+			lists: 'board/all'
+		}),
+	},
 }
 </script>
 
