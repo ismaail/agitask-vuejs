@@ -1,5 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@views/Home.vue';
+import authStore from '@/store/Auth';
+
+/**
+ * Redirect to '/login' if User is not authenticated.
+ *
+ * @param {Object} to
+ * @param {Object} from
+ * @param next
+ */
+const routeGuard = (to, from, next) => {
+	const isAuthenticated = authStore.getters.check(authStore.state);
+	const path = isAuthenticated ? true : { name: 'Login' };
+
+	next(path);
+}
 
 const routes = [
 	{
