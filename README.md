@@ -1,4 +1,4 @@
-# AgiTask - Vuejs
+# AgiTask - Vuejs (WIP)
 
 ## Project setup
 ```
