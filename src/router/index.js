@@ -11,7 +11,7 @@ import authStore from '@/store/Auth';
  */
 const routeGuard = (to, from, next) => {
 	const isAuthenticated = authStore.getters.check(authStore.state);
-	const path = isAuthenticated ? true : { name: 'Login' };
+	const path = isAuthenticated ? true : { name: 'login' };
 
 	next(path);
 }
@@ -19,24 +19,24 @@ const routeGuard = (to, from, next) => {
 const routes = [
 	{
 		path: '/',
-		name: 'Home',
+		name: 'home',
 		component: Home
 	},
 	{
 		path: '/about',
-		name: 'About',
+		name: 'about',
 		beforeEnter: routeGuard,
 		component: () => import('@views/About.vue')
 	},
 	{
 		path: '/board',
-		name: 'Board',
+		name: 'board',
 		beforeEnter: routeGuard,
 		component: () => import('@views/Board.vue'),
 	},
 	{
 		path: '/login',
-		name: 'Login',
+		name: 'login',
 		component: () => import('@/views/Login.vue'),
 	},
 ];
