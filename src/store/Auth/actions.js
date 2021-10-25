@@ -25,5 +25,6 @@ export default {
 		commit('setAuthenticated', true);
 
 		return response.data;
+		commit('setAccessToken', response.data.data.login.access_token);
 	}
 }
