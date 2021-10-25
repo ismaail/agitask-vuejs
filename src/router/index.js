@@ -20,6 +20,7 @@ const routes = [
 	{
 		path: '/',
 		name: 'home',
+		beforeEnter: routeGuard,
 		component: Home
 	},
 	{
