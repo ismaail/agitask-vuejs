@@ -6,6 +6,7 @@ export default {
 	namespaced: true,
 	state: {
 		authenticated: 'true' === localStorage.getItem('authenticated'),
+		accessToken: localStorage.getItem('accessToken'),
 	},
 	getters,
 	mutations,
