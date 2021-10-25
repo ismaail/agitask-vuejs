@@ -29,6 +29,13 @@ const routes = [
 		beforeEnter: routeGuard,
 		component: () => import('~/views/About.vue')
 	},
+
+	{
+		path: '/boards',
+		name: 'boards',
+		beforeEnter: routeGuard,
+		component: () => import('~/views/Boards.vue'),
+	},
 	{
 		path: '/board',
 		name: 'board',
