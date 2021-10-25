@@ -13,7 +13,7 @@
 						<router-link to="/" class="nav-link">Home</router-link>
 					</li>
 					<li class="nav-item">
-						<router-link to="/board" class="nav-link">Board</router-link>
+						<router-link to="/boards" class="nav-link">Boards</router-link>
 					</li>
 					<li class="nav-item">
 						<router-link to="/about" class="nav-link">About</router-link>

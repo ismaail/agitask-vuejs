@@ -4,9 +4,9 @@ export default {
 	 *
 	 * @param state
 	 *
-	 * @return {[{id: number, title: string}]}
+	 * @return {Object}
 	 */
 	all(state) {
-		return state.lists;
+		return state.boards;
 	},
 }

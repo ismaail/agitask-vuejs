@@ -42,8 +42,11 @@ export default {
 		}),
 		onLogin() {
 			this.login(this.form)
-				.then(() => this.$router.push({ name: 'board'}))
-				.catch((error) => console.log('Failed to login', error.map((err) => err.message)));
+				.then(() => this.$router.push({ name: 'boards'}))
+				.catch((error) => {
+					this.form.password = '';
+					console.log('Failed to login', error.map((err) => err.message))
+				});
 		}
 	},
 
