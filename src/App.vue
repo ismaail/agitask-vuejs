@@ -6,7 +6,7 @@
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarText">
+			<div class="collapse navbar-collapse" id="navbarText" v-if="isAuthenticated">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item">
 						<!--<a class="nav-link active" aria-current="page" href="#">Home</a>-->
@@ -25,3 +25,16 @@
 	</nav>
 	<router-view/>
 </template>
+
+<script>
+import { mapGetters } from "vuex";
+
+export default {
+	computed: {
+		...mapGetters({
+			isAuthenticated: 'auth/check'
+		})
+	}
+
+}
+</script>
