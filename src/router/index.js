@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '@views/Home.vue';
-import authStore from '@/store/Auth';
+import Home from '~/views/Home.vue';
+import authStore from '~/store/Auth';
 
 /**
  * Redirect to '/login' if User is not authenticated.
@@ -26,18 +26,18 @@ const routes = [
 		path: '/about',
 		name: 'about',
 		beforeEnter: routeGuard,
-		component: () => import('@views/About.vue')
+		component: () => import('~/views/About.vue')
 	},
 	{
 		path: '/board',
 		name: 'board',
 		beforeEnter: routeGuard,
-		component: () => import('@views/Board.vue'),
+		component: () => import('~/views/Board.vue'),
 	},
 	{
 		path: '/login',
 		name: 'login',
-		component: () => import('@/views/Login.vue'),
+		component: () => import('~/views/Login.vue'),
 	},
 ];
 

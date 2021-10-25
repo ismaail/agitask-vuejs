@@ -32,9 +32,7 @@ module.exports = {
 	},
 
 	chainWebpack: config => {
-		config.resolve.alias.set('@', path.resolve(__dirname, './src'));
-		config.resolve.alias.set('@views', path.resolve(__dirname, './src/views'));
-		config.resolve.alias.set('@store', path.resolve(__dirname, './src/store'));
+		config.resolve.alias.set('~', path.resolve(__dirname, './src'));
 
 		config.resolve.extensions.add('.js', '.vue');
 	},

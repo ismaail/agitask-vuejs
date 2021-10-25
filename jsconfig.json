@@ -3,9 +3,7 @@
         "module": "es6",
         "baseUrl": ".",
         "paths": {
-            "@/*": ["./src/*"],
-            "@views/*": ["./src/views/*"],
-            "@store/*": ["./src/store/*"]
+            "~/*": ["./src/*"]
         }
     }
 }

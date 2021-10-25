@@ -1,5 +1,5 @@
 import axios from 'axios';
-import loginMutation from '@/graphql/mutations/login';
+import loginMutation from '~/graphql/mutations/login';
 
 export default {
 	async login({ commit }, credentials) {
